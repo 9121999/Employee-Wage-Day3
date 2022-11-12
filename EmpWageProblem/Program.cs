@@ -1,10 +1,13 @@
-﻿namespace EmpWageProblem
+﻿using EmployeeWageProblem;
+
+namespace EmpWageProblem
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("WelCome To EmployeeWage Info");
+            EmployeeWage employee =new EmployeeWage();
+            employee.Attendance();
         }
     }
 }
