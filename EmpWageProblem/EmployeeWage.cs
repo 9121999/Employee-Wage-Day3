@@ -20,7 +20,7 @@ namespace EmployeeWageProblem
         public void EmpWage()
         {
             int TotalEmpWage = 0, empHrs = 0;
-            for (int i = 0; i < Total_Working_Days; i++)
+            for (int i = 0; i < Total_Working_Days && empHrs < 100; i++)
             {
                 int empCheck = random.Next(0, 3);
                 switch (empCheck)
@@ -37,7 +37,7 @@ namespace EmployeeWageProblem
                 }
             }
             TotalEmpWage = Wage_Per_Hr * empHrs;
-            Console.WriteLine("Total monthly  Wage " + TotalEmpWage);
+            Console.WriteLine("Total Hr And Days " + TotalEmpWage);
         }
 
     }
